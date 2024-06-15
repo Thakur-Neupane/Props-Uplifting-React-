@@ -1,4 +1,5 @@
 import React from "react";
+import { FemaleAvatar, MaleAvatar } from "./Avatars";
 
 const UserTable = ({ userList }) => {
   return (
@@ -14,9 +15,9 @@ const UserTable = ({ userList }) => {
         </thead>
         <tbody>
           {userList.map((user, i) => (
-            <tr>
+            <tr key={i}>
               <th scope="row">{i + 1}</th>
-              <td></td>
+              <td>{user.gender === "m" ? <MaleAvatar /> : <FemaleAvatar />}</td>
               <td>{user.gender}</td>
               <td>{user.name}</td>
             </tr>
