@@ -9,7 +9,7 @@ const App = () => {
     console.log(userObj);
     setUserList([...userList, userObj]);
   };
-  console.log(userList);
+
   return (
     <div className="container pt-4">
       <h2 className="text-center">User List</h2>
@@ -18,7 +18,7 @@ const App = () => {
       <UserForm addUser={addUser} />
       {/* tabel component here */}
 
-      <UserTable />
+      <UserTable userList={userList} />
     </div>
   );
 };
