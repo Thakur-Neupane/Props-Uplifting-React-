@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const UserForm = () => {
+const UserForm = ({ addUser }) => {
   const [user, setUser] = useState({});
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -10,10 +10,14 @@ const UserForm = () => {
       [name]: value,
     });
   };
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    addUser(user);
+  };
   console.log(user);
   return (
     <div className="w-50 shadow-lg p-5 m-auto mt-5 rounded">
-      <form action="">
+      <form action="" onSubmit={handleOnSubmit}>
         <div className="row g-2">
           <div className="col-md-3">
             <select
