@@ -1,4 +1,7 @@
 # User List Project 
+<img width="926" alt="props 1" src="https://github.com/Thakur-Neupane/Props-Uplifting-React-/assets/159857520/bd2b8e80-5b73-45fb-a61a-548ddf5f9544">
+<img width="913" alt="props2" src="https://github.com/Thakur-Neupane/Props-Uplifting-React-/assets/159857520/976ff55b-bf85-4785-b61f-fd35e4eab1ac">
+
 ## In this project you can simply add the users and display them in the table.
 ### My approaches:
 1 The project has been simply made on vite and npm ecosystem.  
